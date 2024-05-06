@@ -22,8 +22,9 @@ def changeMacAddressWindows(interface, newMac):
     subprocess.call(["ipconfig", "/release"])
     subprocess.call(["ipconfig", "/renew"])
 
-#check the os and write the command accordingly
-def checkOs():
+
+if "__main__" == __name__:
+    #check the os and execute the command accordingly
     if name == 'nt':
         printInterfacesWindows()
         changeMacAddressWindows(argv[1], argv[2])
