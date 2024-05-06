@@ -15,6 +15,7 @@ This Python program facilitates changing the MAC address of a network interface 
 ### Command Line Syntax:
 ```bash
 python mac_changer.py [interface] [new_mac_address]
+```
 
 ### Example:
 ```bash
