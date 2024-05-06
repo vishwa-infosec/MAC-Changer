@@ -1,12 +1,12 @@
 import subprocess
-from os import name
+#from os import name
 from sys import argv
 
 def printInterfacesLinux():
     print("[+] Updated Interface:")
     #print the updated interface details
 
-    subprocess.call(["ifconfig", "{argv[1]}"])
+    subprocess.call(["ifconfig", argv[1]])
 
 def changeMacAddressLinux(interface, newMac):
     print(f"[+] Changing MAC address for {interface} to {newMac}")
@@ -31,5 +31,5 @@ if "__main__" == __name__:
         #printInterfacesWindows()
         #changeMacAddressWindows(argv[1], argv[2])
     #else:
-    printInterfacesLinux()
     changeMacAddressLinux(argv[1], argv[2])
+    printInterfacesLinux()
