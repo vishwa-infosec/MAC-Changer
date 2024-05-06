@@ -5,7 +5,7 @@ This Python program facilitates changing the MAC address of a network interface 
 
 ## Prerequisites
 - Python 3.x
-- Operating System: Linux or Windows
+- Operating System: Linux
 
 ## Usage
 1. Ensure you have Python 3.x installed on your system.
@@ -14,9 +14,9 @@ This Python program facilitates changing the MAC address of a network interface 
 
 ### Command Line Syntax:
 ```bash
-python mac_changer.py [interface] [new_mac_address]
+sudo python3 macChanger.py [interface] [new_mac_address]
 ```
 
 ### Example:
 ```bash
-python mac_changer.py eth0 00:11:22:33:44:55
+sudo python3 macChanger.py eth0 00:11:22:33:44:55
